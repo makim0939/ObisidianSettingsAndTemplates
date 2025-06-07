@@ -1,0 +1,1 @@
+<span style="color: grey;">text</span>
