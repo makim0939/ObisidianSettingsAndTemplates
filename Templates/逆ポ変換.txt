@@ -1,0 +1,276 @@
+====================================================================================================
+全ての組み合わせで正常に動作する。
+===== 入力 =====
+引数 *pstTokens
+{{0, DATA_NODE}, {0, PLUS_NODE}, {0, DATA_NODE}, {0, PLUS_NODE}, {0, DATA_NODE}, {0, EOT_NODE}}
+{{0, DATA_NODE}, {0, PLUS_NODE}, {0, DATA_NODE}, {0, MINS_NODE}, {0, DATA_NODE}, {0, EOT_NODE}}
+{{0, DATA_NODE}, {0, PLUS_NODE}, {0, DATA_NODE}, {0, MULT_NODE}, {0, DATA_NODE}, {0, EOT_NODE}}
+{{0, DATA_NODE}, {0, PLUS_NODE}, {0, DATA_NODE}, {0, DIVD_NODE}, {0, DATA_NODE}, {0, EOT_NODE}}
+{{0, DATA_NODE}, {0, MINS_NODE}, {0, DATA_NODE}, {0, PLUS_NODE}, {0, DATA_NODE}, {0, EOT_NODE}}
+{{0, DATA_NODE}, {0, MINS_NODE}, {0, DATA_NODE}, {0, MINS_NODE}, {0, DATA_NODE}, {0, EOT_NODE}}
+{{0, DATA_NODE}, {0, MINS_NODE}, {0, DATA_NODE}, {0, MULT_NODE}, {0, DATA_NODE}, {0, EOT_NODE}}
+{{0, DATA_NODE}, {0, MINS_NODE}, {0, DATA_NODE}, {0, DIVD_NODE}, {0, DATA_NODE}, {0, EOT_NODE}}
+{{0, DATA_NODE}, {0, MULT_NODE}, {0, DATA_NODE}, {0, PLUS_NODE}, {0, DATA_NODE}, {0, EOT_NODE}}
+{{0, DATA_NODE}, {0, MULT_NODE}, {0, DATA_NODE}, {0, MINS_NODE}, {0, DATA_NODE}, {0, EOT_NODE}}
+{{0, DATA_NODE}, {0, MULT_NODE}, {0, DATA_NODE}, {0, MULT_NODE}, {0, DATA_NODE}, {0, EOT_NODE}}
+{{0, DATA_NODE}, {0, MULT_NODE}, {0, DATA_NODE}, {0, DIVD_NODE}, {0, DATA_NODE}, {0, EOT_NODE}}
+{{0, DATA_NODE}, {0, DIVD_NODE}, {0, DATA_NODE}, {0, PLUS_NODE}, {0, DATA_NODE}, {0, EOT_NODE}}
+{{0, DATA_NODE}, {0, DIVD_NODE}, {0, DATA_NODE}, {0, MINS_NODE}, {0, DATA_NODE}, {0, EOT_NODE}}
+{{0, DATA_NODE}, {0, DIVD_NODE}, {0, DATA_NODE}, {0, MULT_NODE}, {0, DATA_NODE}, {0, EOT_NODE}}
+{{0, DATA_NODE}, {0, DIVD_NODE}, {0, DATA_NODE}, {0, DIVD_NODE}, {0, DATA_NODE}, {0, EOT_NODE}}
+
+スタブの戻り値 PUSH()
+{1, 1}
+{1, 1}
+{1, 1, 1}
+{1, 1, 1}
+{1, 1}
+{1, 1}
+{1, 1, 1}
+{1, 1, 1}
+{1, 1}
+{1, 1}
+{1, 1}
+{1, 1}
+{1, 1}
+{1, 1}
+{1, 1}
+{1, 1}
+
+スタブの戻り値 POP()
+{0, 1, 0, 1, 0}
+{0, 1, 0, 1, 0}
+{0, 1, 1, 1, 0}
+{0, 1, 1, 1, 0}
+{0, 1, 0, 1, 0}
+{0, 1, 0, 1, 0}
+{0, 1, 1, 1, 0}
+{0, 1, 1, 1, 0}
+{0, 1, 0, 1, 0} 
+{0, 1, 0, 1, 0} 
+{0, 1, 0, 1, 0}
+{0, 1, 0, 1, 0}
+{0, 1, 0, 1, 0} 
+{0, 1, 0, 1, 0} 
+{0, 1, 0, 1, 0}
+{0, 1, 0, 1, 0}
+
+スタブの出力引数 POP()
+{NO_CHANGE, PLUS_NODE, NO_CHANGE, PLUS_NODE, NO_CHANGE}
+{NO_CHANGE, PLUS_NODE, NO_CHANGE, MINS_NODE, NO_CHANGE}
+{NO_CHANGE, PLUS_NODE, MULT_NODE, PLUS_NODE, NO_CHANGE}
+{NO_CHANGE, PLUS_NODE, DIVD_NODE, PLUS_NODE, NO_CHANGE}
+{NO_CHANGE, MINS_NODE, NO_CHANGE, PLUS_NODE, NO_CHANGE}
+{NO_CHANGE, MINS_NODE, NO_CHANGE, MINS_NODE, NO_CHANGE}
+{NO_CHANGE, MINS_NODE, MULT_NODE, MINS_NODE, NO_CHANGE}
+{NO_CHANGE, MINS_NODE, DIVD_NODE, MINS_NODE, NO_CHANGE}
+{NO_CHANGE, MULT_NODE, NO_CHANGE, PLUS_NODE, NO_CHANGE}
+{NO_CHANGE, MULT_NODE, NO_CHANGE, MINS_NODE, NO_CHANGE}
+{NO_CHANGE, MULT_NODE, NO_CHANGE, MULT_NODE, NO_CHANGE}
+{NO_CHANGE, MULT_NODE, NO_CHANGE, DIVD_NODE, NO_CHANGE}
+{NO_CHANGE, DIVD_NODE, NO_CHANGE, PLUS_NODE, NO_CHANGE}
+{NO_CHANGE, DIVD_NODE, NO_CHANGE, MINS_NODE, NO_CHANGE}
+{NO_CHANGE, DIVD_NODE, NO_CHANGE, MULT_NODE, NO_CHANGE}
+{NO_CHANGE, DIVD_NODE, NO_CHANGE, DIVD_NODE, NO_CHANGE}
+
+===== 出力 =====
+全ての組み合わせで正常に動作する。
+出力引数
+{{0 ,1}, {0 ,1}, {0 ,2}, {0 ,1}, {0 ,2}, {0 ,6}}
+{{0 ,1}, {0 ,1}, {0 ,2}, {0 ,1}, {0 ,3}, {0 ,6}}
+{{0 ,1}, {0 ,1}, {0 ,1}, {0 ,4}, {0 ,2}, {0 ,6}}
+{{0 ,1}, {0 ,1}, {0 ,1}, {0 ,5}, {0 ,2}, {0 ,6}}
+{{0 ,1}, {0 ,1}, {0 ,3}, {0 ,1}, {0 ,2}, {0 ,6}}
+{{0 ,1}, {0 ,1}, {0 ,3}, {0 ,1}, {0 ,3}, {0 ,6}}
+{{0 ,1}, {0 ,1}, {0 ,1}, {0 ,4}, {0 ,3}, {0 ,6}}
+{{0 ,1}, {0 ,1}, {0 ,1}, {0 ,5}, {0 ,3}, {0 ,6}}
+{{0 ,1}, {0 ,1}, {0 ,4}, {0 ,1}, {0 ,2}, {0 ,6}}
+{{0 ,1}, {0 ,1}, {0 ,4}, {0 ,1}, {0 ,3}, {0 ,6}}
+{{0 ,1}, {0 ,1}, {0 ,4}, {0 ,1}, {0 ,4}, {0 ,6}}
+{{0 ,1}, {0 ,1}, {0 ,4}, {0 ,1}, {0 ,5}, {0 ,6}}
+{{0 ,1}, {0 ,1}, {0 ,5}, {0 ,1}, {0 ,2}, {0 ,6}}
+{{0 ,1}, {0 ,1}, {0 ,5}, {0 ,1}, {0 ,3}, {0 ,6}}
+{{0 ,1}, {0 ,1}, {0 ,5}, {0 ,1}, {0 ,4}, {0 ,6}}
+{{0 ,1}, {0 ,1}, {0 ,5}, {0 ,1}, {0 ,5}, {0 ,6}}
+
+スタブの引数 PUSH()
+{2, 2}
+{2, 3}
+{2, 2, 4}
+{2, 2, 5}
+{3, 2}
+{3, 3}
+{3, 3, 4}
+{3, 3, 5}
+{4, 2}
+{4, 3}
+{4, 4}
+{4, 5}
+{5, 2}
+{5, 3}
+{5, 4}
+{5, 5}
+
+1: DATA_NODE
+2: PLUS_NODE
+3: MINS_NODES
+4: MULT_NODE
+5: DIVD_NODE
+6: EOT_NODE
+
+
+
+
+
+====================================================================================================
+「計算式トークン配列」を順にみるときの、ループ網羅
+===== 入力 =====
+引数 *pstTokens
+0回: なし
+最小回数 : {{0, DATA_NODE}, {0, EOT_NODE}}
+最大回数(80トークン) : 
+{
+    {10, DATA_NODE}, {0, PLUS_NODE}, {0, DATA_NODE}, {0, PLUS_NODE}, {0, DATA_NODE}, {0, PLUS_NODE}, {0, DATA_NODE}, {0, PLUS_NODE}, {0, DATA_NODE}, {0, PLUS_NODE},
+    {0, DATA_NODE}, {0, PLUS_NODE}, {0, DATA_NODE}, {0, PLUS_NODE}, {0, DATA_NODE}, {0, PLUS_NODE}, {0, DATA_NODE}, {0, PLUS_NODE}, {0, DATA_NODE}, {0, PLUS_NODE},
+    {0, DATA_NODE}, {0, PLUS_NODE}, {0, DATA_NODE}, {0, PLUS_NODE}, {0, DATA_NODE}, {0, PLUS_NODE}, {0, DATA_NODE}, {0, PLUS_NODE}, {0, DATA_NODE}, {0, PLUS_NODE},
+    {0, DATA_NODE}, {0, PLUS_NODE}, {0, DATA_NODE}, {0, PLUS_NODE}, {0, DATA_NODE}, {0, PLUS_NODE}, {0, DATA_NODE}, {0, PLUS_NODE}, {0, DATA_NODE}, {0, PLUS_NODE},
+    {0, DATA_NODE}, {0, PLUS_NODE}, {0, DATA_NODE}, {0, PLUS_NODE}, {0, DATA_NODE}, {0, PLUS_NODE}, {0, DATA_NODE}, {0, PLUS_NODE}, {0, DATA_NODE}, {0, PLUS_NODE},
+    {0, DATA_NODE}, {0, PLUS_NODE}, {0, DATA_NODE}, {0, PLUS_NODE}, {0, DATA_NODE}, {0, PLUS_NODE}, {0, DATA_NODE}, {0, PLUS_NODE}, {0, DATA_NODE}, {0, PLUS_NODE},
+    {0, DATA_NODE}, {0, PLUS_NODE}, {0, DATA_NODE}, {0, PLUS_NODE}, {0, DATA_NODE}, {0, PLUS_NODE}, {0, DATA_NODE}, {0, PLUS_NODE}, {0, DATA_NODE}, {0, PLUS_NODE},
+    {0, DATA_NODE}, {0, PLUS_NODE}, {0, DATA_NODE}, {0, PLUS_NODE}, {0, DATA_NODE}, {0, PLUS_NODE}, {0, DATA_NODE}, {0, PLUS_NODE}, {0, DATA_NODE}, {0, EOT_NODE}
+}
+
+スタブの戻り値 PUSH()
+0回: なし
+最小回数: {}
+最大回数: 
+{ 
+    1, 1, 1, 1, 1,
+    1, 1, 1, 1, 1,
+    1, 1, 1, 1, 1,
+    1, 1, 1, 1, 1,
+    1, 1, 1, 1, 1,
+    1, 1, 1, 1, 1,
+    1, 1, 1, 1, 1,
+    1, 1, 1, 1
+}
+
+スタブの戻り値 POP()
+0回: なし
+最小回数: {0}
+最大回数:
+{
+    0, 1, 0, 1, 0, 1, 0, 1, 0,
+    1, 0, 1, 0, 1, 0, 1, 0, 1, 0,
+    1, 0, 1, 0, 1, 0, 1, 0, 1, 0,
+    1, 0, 1, 0, 1, 0, 1, 0, 1, 0,
+    1, 0, 1, 0, 1, 0, 1, 0, 1, 0,
+    1, 0, 1, 0, 1, 0, 1, 0, 1, 0,
+    1, 0, 1, 0, 1, 0, 1, 0, 1, 0,
+    1, 0, 1, 0, 1, 0, 1, 0, 1, 0,
+}
+
+スタブの出力引数
+0回: なし
+最小回数: {NO_CHANGE}
+最大回数:
+{
+    NO_CHANGE, PLUS_NODE, NO_CHANGE, PLUS_NODE, NO_CHANGE, PLUS_NODE, NO_CHANGE, PLUS_NODE, NO_CHANGE,
+    PLUS_NODE, NO_CHANGE, PLUS_NODE, NO_CHANGE, PLUS_NODE, NO_CHANGE, PLUS_NODE, NO_CHANGE, PLUS_NODE, NO_CHANGE,
+    PLUS_NODE, NO_CHANGE, PLUS_NODE, NO_CHANGE, PLUS_NODE, NO_CHANGE, PLUS_NODE, NO_CHANGE, PLUS_NODE, NO_CHANGE,
+    PLUS_NODE, NO_CHANGE, PLUS_NODE, NO_CHANGE, PLUS_NODE, NO_CHANGE, PLUS_NODE, NO_CHANGE, PLUS_NODE, NO_CHANGE,
+    PLUS_NODE, NO_CHANGE, PLUS_NODE, NO_CHANGE, PLUS_NODE, NO_CHANGE, PLUS_NODE, NO_CHANGE, PLUS_NODE, NO_CHANGE,
+    PLUS_NODE, NO_CHANGE, PLUS_NODE, NO_CHANGE, PLUS_NODE, NO_CHANGE, PLUS_NODE, NO_CHANGE, PLUS_NODE, NO_CHANGE,
+    PLUS_NODE, NO_CHANGE, PLUS_NODE, NO_CHANGE, PLUS_NODE, NO_CHANGE, PLUS_NODE, NO_CHANGE, PLUS_NODE, NO_CHANGE,
+    PLUS_NODE, NO_CHANGE, PLUS_NODE, NO_CHANGE, PLUS_NODE, NO_CHANGE, PLUS_NODE, NO_CHANGE, PLUS_NODE, NO_CHANGE,
+}
+
+===== 出力 =====
+出力引数
+0回: なし
+最小回数: {{0, 1}, {0, 6}}
+最大回数:
+{
+    {10, 1}, {0, 1}, {0, 2}, {0, 1}, {0, 2}, {0, 1}, {0, 2}, {0, 1}, {0, 2}, 
+    {0, 1}, {0, 2}, {0, 1}, {0, 2}, {0, 1}, {0, 2}, {0, 1}, {0, 2}, {0, 1}, {0, 2}, 
+    {0, 1}, {0, 2}, {0, 1}, {0, 2}, {0, 1}, {0, 2}, {0, 1}, {0, 2}, {0, 1}, {0, 2}, 
+    {0, 1}, {0, 2}, {0, 1}, {0, 2}, {0, 1}, {0, 2}, {0, 1}, {0, 2}, {0, 1}, {0, 2}, 
+    {0, 1}, {0, 2}, {0, 1}, {0, 2}, {0, 1}, {0, 2}, {0, 1}, {0, 2}, {0, 1}, {0, 2}, 
+    {0, 1}, {0, 2}, {0, 1}, {0, 2}, {0, 1}, {0, 2}, {0, 1}, {0, 2}, {0, 1}, {0, 2}, 
+    {0, 1}, {0, 2}, {0, 1}, {0, 2}, {0, 1}, {0, 2}, {0, 1}, {0, 2}, {0, 1}, {0, 2}, 
+    {0, 1}, {0, 2}, {0, 1}, {0, 2}, {0, 1}, {0, 2}, {0, 1}, {0, 2}, {0, 1}, 
+    {0, 2}, {0, 6} 
+}
+
+スタブの引数
+0回: なし
+最小回数: {}
+最大回数:
+{ 
+    2, 2, 2, 2, 2,
+    2, 2, 2, 2, 2,
+    2, 2, 2, 2, 2,
+    2, 2, 2, 2, 2,
+    2, 2, 2, 2, 2,
+    2, 2, 2, 2, 2,
+    2, 2, 2, 2, 2,
+    2, 2, 2, 2
+}
+全ての演算子が1度スタックに入る→39回PUSH
+
+
+
+
+
+====================================================================================================
+演算子の優先度を比較し「逆ポーランド記法のトークン配列」に格納するときのループ網羅
+===== 入力 =====
+引数 *pstTokens
+0回(ループ初回でBreak): {{0, DATA_NODE}, {0, PLUS_NODE}, {0, DATA_NODE}, {0, EOT_NODE}}
+最小回数(ループ2回目でBreak): {{0, DATA_NODE}, {0, PLUS_NODE}, {0, DATA_NODE}, {0, PLUS_NODE}, {0, DATA_NODE}, {0, EOT_NODE}}
+最大回数(ループ3回目でBreak): {{0, DATA_NODE}, {0, PLUS_NODE}, {0, DATA_NODE}, {0, MULT_NODE}, {0, DATA_NODE}, {0, PLUS_NODE}, {0, DATA_NODE}, {0, EOT_NODE}}
+
+スタブの戻り値 PUSH()
+0回: {1}
+最小回数: {1, 1}
+最大回数: {1, 1, 1, 1}
+
+スタブの戻り値 POP()
+0回: {0, 1, 0}
+最小回数: {0, 1, 0, 1, 0}
+最大回数: {0, 1, 1, 1, 0, 1, 0}
+
+スタブの出力引数 POP()
+0回: {NO_CHANGE, PLUS_NODE, NO_CHANGE}
+最小回数: {NO_CHANGE, PLUS_NODE, NO_CHANGE, PLUS_NODE, NO_CHANGE}
+最大回数: {NO_CHANGE, PLUS_NODE, MULT_NODE, PLUS_NODE, NO_CHANGE, PLUS_NODE, NO_CHANGE}
+
+===== 出力 =====
+出力引数
+0回: {{0 ,DATA_NODE}, {0 ,DATA_NODE}, {0 ,PLUS_NODE}, {0 ,EOT_NODE}}
+最小回数: {{0 ,DATA_NODE}, {0 ,DATA_NODE}, {0 ,PLUS_NODE}, {0 ,DATA_NODE}, {0 ,PLUS_NODE}, {0 ,EOT_NODE}}
+最大回数: {{0, DATA_NODE}, {0, DATA_NODE}, {0, DATA_NODE}, {0, MULT_NODE}, {0, PLUS_NODE}, {0, DATA_NODE}, {0, PLUS_NODE}, {0 ,EOT_NODE}}
+
+スタブの引数 PUSH()
+0回: {PLUS_NODE}
+最小回数: {PLUS_NODE, PLUS_NODE}
+最大回数: {PLUS_NODE, PLUS_NODE, MULT_NODE, PLUS_NODE}
+
+
+
+
+
+====================================================================================================
+「演算子スタック」に残った要素を「逆ポーランド記法のトークン配列」に格納するループ
+===== 入力 =====
+引数 *pstTokens
+0回(スタックに残りなし): {{0, DATA_NODE}, {0, EOT_NODE}}
+1回(スタックに1つ残り): {{0, DATA_NODE}, {0, PLUS_NODE}, {0, DATA_NODE}, {0, EOT_NODE}}
+最大回数(スタックに2つ残り): {{0, DATA_NODE}, {0, PLUS_NODE}, {0, DATA_NODE}, {0, MULT_NODE_NODE}, {0, DATA_NODE}, {0, EOT_NODE}}
+
+スタブの戻り値 PUSH()
+スタブの戻り値 POP()
+スタブの出力引数
+===== 出力 =====
+出力引数
+スタブの引数
